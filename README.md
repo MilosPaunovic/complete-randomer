@@ -19,13 +19,13 @@ const randomer = require('complete-randomer');
 ## Methods
 
 ```js
-// Random integer between sent values, inclusively
+// Random integer between min & max, inclusively
 randomer.INTEGER(min, max);
 
-// Random string value
+// Random string
 randomer.STRING(length);
 
-// Random boolean value
+// Random boolean
 randomer.BOOLEAN();
 ```
 
