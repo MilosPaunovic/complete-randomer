@@ -25,7 +25,7 @@ const randomer = require('complete-randomer');
 randomer.NUMBER.INTEGER(min, max);
 
 // Random string
-randomer.STRING.WORD(length);
+randomer.STRING.GIBBERISH(length);
 
 // Random boolean
 randomer.BOOLEAN.IS();
