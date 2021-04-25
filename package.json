@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A simple NPM helper package for generating random values.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
   "author": "Miloš Paunović <paun992@hotmail.com>",
   "keywords": [
     "random",
