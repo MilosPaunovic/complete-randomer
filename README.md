@@ -22,7 +22,7 @@ const randomer = require('complete-randomer');
 // Random integer between sent values, inclusively
 randomer.INTEGER(min, max);
 
-// Random string
+// Random string value
 randomer.STRING(length);
 
 // Random boolean value
