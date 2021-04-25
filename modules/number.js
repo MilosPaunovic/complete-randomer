@@ -5,12 +5,19 @@
  * @param {Number} max Maximum value for random number
  * @return {Number} Resulting number
  */
-function INTEGER(min, max) {
+module.exports = function INTEGER(min, max) {
+    // Arguments checking
+    if (arguments.length !== 2) throw new TypeError('Two parameters required');
+
     const isArgumentInvalid = (arg) => typeof arg !== 'number';
 
     if ([...arguments].filter(isArgumentInvalid).length > 0) {
         throw new TypeError('Both parameters must be Number');
     }
 
-    return Number(Math.floor(Math.random() * (max - min + 1)) + min);
+    // Creating value
+    const value = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    // Making sure value is casted to proper type
+    return Number(value);
 }

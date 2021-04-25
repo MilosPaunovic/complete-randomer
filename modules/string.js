@@ -5,7 +5,7 @@
  * @param {Number} length Number of character for your random string
  * @return {String} Resulting string
  */
-function STRING(length) {
+module.exports = function STRING(length) {
     const isArgumentInvalid = (arg) => typeof arg !== 'number';
 
     if ([...arguments].filter(isArgumentInvalid).length > 0) {
