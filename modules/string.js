@@ -6,12 +6,16 @@
  * @return {String} Resulting string
  */
 module.exports = function STRING(length) {
+    // Arguments checking
+    if (arguments.length !== 1) throw new TypeError('One parameter required');
+
     const isArgumentInvalid = (arg) => typeof arg !== 'number';
 
     if ([...arguments].filter(isArgumentInvalid).length > 0) {
         throw new TypeError('Length parameter must be Number');
     }
 
+    // Creating value
     let string = '';
 
     while (string.length < length) {
@@ -20,5 +24,6 @@ module.exports = function STRING(length) {
             .substr(2, length - string.length);
     }
 
-    return string;
+    // Making sure value is casted to proper type
+    return String(string);
 }
