@@ -1,4 +1,4 @@
-const BOOLEAN = require('./functions/boolean')
+const BOOLEAN = require('./modules/boolean')
 
 /**
  * Returns random generated integer between sent values, inclusively
