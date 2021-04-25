@@ -22,7 +22,7 @@ const randomer = require('complete-randomer');
 // Returns random integer between sent values, inclusively
 randomer.INTEGER(min, max);
 
-// Returns random generated string containing number of characters forwarded in function parameter
+// Returns random generated string
 randomer.STRING(length);
 
 // Returns random generated boolean value
