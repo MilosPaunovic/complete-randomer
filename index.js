@@ -16,6 +16,24 @@ function INTEGER(min, max) {
 }
 
 /**
+ * Returns random generated string containing number of characters forwarded in function parameter
+ *
+ * @param {Number} length Number of character for your random string
+ * @return {String} Resulting string
+ */
+function STRING(length) {
+  let string = '';
+
+  while (string.length < length) {
+    string += Math.random()
+      .toString(36)
+      .substr(2, length - string.length);
+  }
+
+  return string;
+}
+
+/**
  * Returns random generated boolean value
  *
  * @return {Boolean} Resulting boolean value
@@ -24,4 +42,4 @@ function BOOLEAN() {
   return Boolean(Math.round(Math.random() * 1 + 0) === 0);
 }
 
-module.exports = { INTEGER, BOOLEAN };
+module.exports = { INTEGER, STRING, BOOLEAN };
