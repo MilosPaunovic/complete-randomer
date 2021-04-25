@@ -13,6 +13,6 @@ describe('BOOLEAN()', function () {
 
   it('Should test if returned value is Boolean', function () {
     const result = BOOLEAN();
-    assert.typeOf(result, 'boolean');
+    assert.isBoolean(result);
   });
 });
