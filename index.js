@@ -1,3 +1,5 @@
+const BOOLEAN = require('./functions/boolean')
+
 /**
  * Returns random generated integer between sent values, inclusively
  *
@@ -38,15 +40,6 @@ function STRING(length) {
   }
 
   return string;
-}
-
-/**
- * Returns random generated boolean value
- *
- * @return {Boolean} Resulting boolean value
- */
-function BOOLEAN() {
-  return Boolean(Math.round(Math.random() * 1 + 0) === 0);
 }
 
 module.exports = { INTEGER, STRING, BOOLEAN };
