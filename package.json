@@ -7,9 +7,11 @@
   "author": "Miloš Paunović <paun992@hotmail.com>",
   "keywords": [
     "random",
-    "number",
     "generator",
-    "integer"
+    "number",
+    "integer",
+    "string",
+    "boolean"
   ],
   "license": "MIT"
 }
