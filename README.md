@@ -23,7 +23,7 @@ const randomer = require('complete-randomer');
 randomer.INTEGER(min, max);
 
 // Returns random generated boolean value
-randomer.BOOLEAN(min, max);
+randomer.BOOLEAN();
 ```
 
 ## Contributing
