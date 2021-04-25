@@ -1,5 +1,5 @@
 const { expect, assert } = require('chai');
-const INTEGER = require('../modules/number');
+const { INTEGER } = require('../modules/number');
 
 describe('INTEGER()', function () {
   it('Should throw TypeError if less than 2 parameter are sent', function () {
