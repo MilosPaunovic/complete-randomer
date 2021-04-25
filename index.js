@@ -9,7 +9,7 @@ function INTEGER(min, max) {
   const isArgumentInvalid = (arg) => typeof arg !== 'number';
 
   if ([...arguments].filter(isArgumentInvalid).length > 0) {
-    throw new TypeError('Both parameters must be of Number type.');
+    throw new TypeError('Both parameters must be Number');
   }
 
   return Number(Math.floor(Math.random() * (max - min + 1)) + min);
@@ -22,6 +22,12 @@ function INTEGER(min, max) {
  * @return {String} Resulting string
  */
 function STRING(length) {
+  const isArgumentInvalid = (arg) => typeof arg !== 'number';
+
+  if ([...arguments].filter(isArgumentInvalid).length > 0) {
+    throw new TypeError('Length parameter must be Number');
+  }
+
   let string = '';
 
   while (string.length < length) {
