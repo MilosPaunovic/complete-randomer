@@ -16,7 +16,8 @@ function INTEGER(min, max) {
 }
 
 /**
- * Returns random generated string containing number of characters forwarded in function parameter
+ * Returns random generated string containing number of characters
+ * forwarded in function parameter
  *
  * @param {Number} length Number of character for your random string
  * @return {String} Resulting string
