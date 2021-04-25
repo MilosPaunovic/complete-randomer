@@ -21,6 +21,9 @@ const randomer = require('complete-randomer');
 ```js
 // Returns random integer between sent values, inclusively
 randomer.INTEGER(min, max);
+
+// Returns random generated boolean value
+randomer.BOOLEAN(min, max);
 ```
 
 ## Contributing

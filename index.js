@@ -1,5 +1,5 @@
 /**
- * Returns random generated integer between sent values, inclusively.
+ * Returns random generated integer between sent values, inclusively
  *
  * @param {Number} min Minimum value for random number
  * @param {Number} max Maximum value for random number
@@ -15,4 +15,13 @@ function INTEGER(min, max) {
   return Number(Math.floor(Math.random() * (max - min + 1)) + min);
 }
 
-module.exports = { INTEGER };
+/**
+ * Returns random generated boolean value
+ *
+ * @return {Boolean} Resulting boolean value
+ */
+function BOOLEAN() {
+  return Boolean(Math.round(Math.random() * 1 + 0) === 0);
+}
+
+module.exports = { INTEGER, BOOLEAN };
