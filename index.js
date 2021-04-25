@@ -1,5 +1,5 @@
-const BOOLEAN = require('./modules/boolean')
-const INTEGER = require('./modules/number')
+const NUMBER = require('./modules/number')
 const STRING = require('./modules/string')
+const BOOLEAN = require('./modules/boolean')
 
-module.exports = { INTEGER, STRING, BOOLEAN };
+module.exports = { NUMBER, STRING, BOOLEAN };

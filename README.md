@@ -22,13 +22,13 @@ const randomer = require('complete-randomer');
 
 ```js
 // Random integer between min & max, inclusively
-randomer.INTEGER(min, max);
+randomer.NUMBER.INTEGER(min, max);
 
 // Random string
-randomer.STRING(length);
+randomer.STRING.WORD(length);
 
 // Random boolean
-randomer.BOOLEAN();
+randomer.BOOLEAN.IS();
 ```
 
 ## Contributing

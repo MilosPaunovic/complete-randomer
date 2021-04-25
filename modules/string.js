@@ -5,7 +5,7 @@
  * @param {Number} length Number of character for your random string
  * @return {String} Resulting string
  */
-module.exports = function STRING(length) {
+exports.WORD = function (length) {
     // Arguments checking
     if (arguments.length !== 1) throw new TypeError('One parameter required');
 

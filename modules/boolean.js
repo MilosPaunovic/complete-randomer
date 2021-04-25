@@ -3,7 +3,7 @@
  *
  * @return {Boolean} Resulting value
  */
-module.exports = function BOOLEAN() {
+exports.IS = function () {
     // Arguments checking
     if (arguments.length) throw new TypeError('No parameters allowed');
 

@@ -5,7 +5,7 @@
  * @param {Number} max Maximum value for random number
  * @return {Number} Resulting number
  */
-module.exports = function INTEGER(min, max) {
+exports.INTEGER = function (min, max) {
     // Arguments checking
     if (arguments.length !== 2) throw new TypeError('Two parameters required');
 
