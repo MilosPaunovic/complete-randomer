@@ -1,6 +1,6 @@
 # complete-randomer
 
-[![Testing](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/unit-tests.yml) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/MilosPaunovic/complete-randomer/blob/develop/LICENSE)
+[![Testing](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml/badge.svg)](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/MilosPaunovic/complete-randomer/blob/develop/LICENSE)
 
 A simple NPM helper package for generating random values.
 
