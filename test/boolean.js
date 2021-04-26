@@ -1,7 +1,7 @@
 const { expect, assert } = require('chai');
 const { IS } = require('../modules/boolean');
 
-describe('BOOLEAN()', function () {
+describe('IS()', function () {
   it('Should throw TypeError for containing parameters', function () {
     assert.throw(() => { IS(true); }, TypeError, 'No parameters allowed');
   });
