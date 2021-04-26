@@ -2,11 +2,15 @@
   "name": "complete-randomer",
   "version": "1.0.0",
   "description": "A simple NPM helper package for generating random values.",
+  "author": "Miloš Paunović <paun992@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MilosPaunovic/complete-randomer.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*.js"
   },
-  "author": "Miloš Paunović <paun992@hotmail.com>",
   "keywords": [
     "random",
     "generator",
