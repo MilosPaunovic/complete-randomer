@@ -12,4 +12,4 @@ exports.IS = function () {
 
     // Making sure value is casted to proper type
     return Boolean(value);
-}
+};

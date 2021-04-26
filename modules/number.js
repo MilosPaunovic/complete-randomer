@@ -20,4 +20,4 @@ exports.INTEGER = function (min, max) {
 
     // Making sure value is casted to proper type
     return Number(value);
-}
+};
