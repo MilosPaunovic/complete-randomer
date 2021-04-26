@@ -17,7 +17,8 @@
     "number",
     "integer",
     "string",
-    "boolean"
+    "boolean",
+    "front-end"
   ],
   "license": "MIT",
   "devDependencies": {
