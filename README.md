@@ -20,14 +20,27 @@ const randomer = require('complete-randomer');
 
 ## Methods
 
-```js
-// Random integer between min & max, inclusively
-randomer.NUMBER.INTEGER(min, max);
+#### Number
 
-// Random string
+```js
+// Integer between min & max, inclusively
+randomer.NUMBER.INTEGER(min, max);
+```
+
+#### String
+
+```js
+// Parameter number of characters as string
 randomer.STRING.GIBBERISH(length);
 
-// Random boolean
+// Array of strings as full names, default length is 1
+randomer.STRING.NAMES(howMany);
+```
+
+#### Boolean
+
+```js
+// Random Boolean value
 randomer.BOOLEAN.IS();
 ```
 
