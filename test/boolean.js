@@ -3,7 +3,7 @@ const { IS } = require('../modules/boolean');
 
 describe('IS()', () => {
   it('Should throw TypeError for containing parameters', () => {
-    assert.throw(() => { IS(true); }, TypeError, 'No parameters allowed');
+    assert.throw(() => { IS(true); }, TypeError, '0 parameter(s) allowed');
   });
 
   it('Should return random value', () => {

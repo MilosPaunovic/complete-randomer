@@ -11,7 +11,7 @@ const HSLA_REGEX = /^hsl\((\d{1,3}) ([\d.]+)% ([\d.]+)% \/ ([\d.]+)%\)$/;
 
 describe('COLOR()', () => {
   it('HEX() - Should throw TypeError if parameters are sent', () => {
-    assert.throw(() => { HEX(true); }, TypeError, 'No parameters allowed');
+    assert.throw(() => { HEX(true); }, TypeError, '0 parameter(s) allowed');
   });
 
   it('HEX() - Should return random HEX color', () => {
@@ -24,10 +24,10 @@ describe('COLOR()', () => {
   });
 
   it('RGB() - Should throw TypeError if parameters are sent', () => {
-    assert.throw(() => { RGB(true); }, TypeError, 'No parameters allowed');
+    assert.throw(() => { RGB(true); }, TypeError, '0 parameter(s) allowed');
   });
 
-  it('RGB() - Should return random rgRGBb color', () => {
+  it('RGB() - Should return random RGB color', () => {
     const result = RGB_REGEX.test(RGB());
     expect(result).to.equal(true);
   });
@@ -37,7 +37,7 @@ describe('COLOR()', () => {
   });
 
   it('RGBA() - Should throw TypeError if parameters are sent', () => {
-    assert.throw(() => { RGBA(true); }, TypeError, 'No parameters allowed');
+    assert.throw(() => { RGBA(true); }, TypeError, '0 parameter(s) allowed');
   });
 
   it('RGBA() - Should return random RGBA color', () => {
@@ -50,7 +50,7 @@ describe('COLOR()', () => {
   });
 
   it('HSL() - Should throw TypeError if parameters are sent', () => {
-    assert.throw(() => { HSL(true); }, TypeError, 'No parameters allowed');
+    assert.throw(() => { HSL(true); }, TypeError, '0 parameter(s) allowed');
   });
 
   it('HSL() - Should return random HSL color', () => {
@@ -63,7 +63,7 @@ describe('COLOR()', () => {
   });
 
   it('HSLA() - Should throw TypeError if parameters are sent', () => {
-    assert.throw(() => { HSLA(true); }, TypeError, 'No parameters allowed');
+    assert.throw(() => { HSLA(true); }, TypeError, '0 parameter(s) allowed');
   });
 
   it('HSLA() - Should return random HSLA color', () => {
