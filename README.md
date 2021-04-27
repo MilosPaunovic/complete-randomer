@@ -46,21 +46,20 @@ randomer.BOOLEAN.IS();
 
 #### Color
 ```js
-// random hex color
-randomer.COLOR.HEX();
-// return example: #41D831
-// random rgb color
-randomer.COLOR.RGB();
-// return example: rgb(180 206 38)
-// random rgba color
-randomer.COLOR.RGBA();
-// return example: rgb(22 26 189 / 60%)
-// random hsl color
-randomer.COLOR.HSL();
-// return example: hsl(346 78% 49%)
-// random hsla color
-randomer.COLOR.HSLA();
-// return example: hsl(134 75% 74% / 26%)
+// Hex color
+randomer.COLOR.HEX(); // #41D831
+
+// RGB color
+randomer.COLOR.RGB(); // rgb(180 206 38)
+
+// RGBA color
+randomer.COLOR.RGBA(); // rgb(22 26 189 / 60%)
+
+// HSL color
+randomer.COLOR.HSL(); // hsl(346 78% 49%)
+
+// HSLA color
+randomer.COLOR.HSLA(); // hsl(134 75% 74% / 26%)
 ```
 
 ## Contributing
