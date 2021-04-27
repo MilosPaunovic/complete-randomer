@@ -9,6 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./ --fix",
     "test": "mocha test/*.js"
   },
   "keywords": [
@@ -23,6 +24,9 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.4",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "mocha": "^8.3.2"
   }
 }
