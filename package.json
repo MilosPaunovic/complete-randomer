@@ -19,6 +19,7 @@
     "integer",
     "string",
     "boolean",
+    "color",
     "front-end"
   ],
   "license": "MIT",
