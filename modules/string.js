@@ -3,6 +3,7 @@
  * forwarded in function parameter
  *
  * @param {Number} length Number of character for your random string
+ *
  * @return {String} Resulting string
  */
 exports.GIBBERISH = function (length) {
@@ -37,6 +38,7 @@ const { INTEGER } = require('./number');
  * be overridden using parameter
  *
  * @param {Number} howMany Number of names you need
+ *
  * @return {Array} Resulting array of names
  */
 exports.NAMES = function (howMany = 1) {

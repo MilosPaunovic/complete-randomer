@@ -44,22 +44,22 @@ randomer.STRING.NAMES(howMany);
 randomer.BOOLEAN.IS();
 ```
 
-#### Color
+#### Colors
 ```js
-// Hex color
-randomer.COLOR.HEX(); // #41D831
+// HEX, #41D831
+randomer.COLOR.HEX();
 
-// RGB color
-randomer.COLOR.RGB(); // rgb(180 206 38)
+// RGB, rgb(180 206 38)
+randomer.COLOR.RGB();
 
-// RGBA color
-randomer.COLOR.RGBA(); // rgb(22 26 189 / 60%)
+// RGBA, rgb(22 26 189 / 60%)
+randomer.COLOR.RGBA();
 
-// HSL color
-randomer.COLOR.HSL(); // hsl(346 78% 49%)
+// HSL, hsl(346 78% 49%)
+randomer.COLOR.HSL();
 
-// HSLA color
-randomer.COLOR.HSLA(); // hsl(134 75% 74% / 26%)
+// HSLA, hsl(134 75% 74% / 26%)
+randomer.COLOR.HSLA();
 ```
 
 ## Contributing

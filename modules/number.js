@@ -3,6 +3,7 @@
  *
  * @param {Number} min Minimum value for random number
  * @param {Number} max Maximum value for random number
+ *
  * @return {Number} Resulting number
  */
 exports.INTEGER = function (min, max) {
