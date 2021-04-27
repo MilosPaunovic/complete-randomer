@@ -1,3 +1,6 @@
+// Importing dependecies
+const { ARGUMENTS } = require('../utils/arguments');
+
 /**
  * Returns random generated integer between sent values, inclusively
  *
@@ -8,13 +11,7 @@
  */
 exports.INTEGER = function (min, max) {
   // Arguments checking
-  if (arguments.length !== 2) throw new TypeError('Two parameters required');
-
-  const isArgumentInvalid = (arg) => typeof arg !== 'number';
-
-  if ([...arguments].filter(isArgumentInvalid).length > 0) {
-    throw new TypeError('Both parameters must be Number');
-  }
+  ARGUMENTS(arguments, 2, 2, 'number');
 
   // Creating value
   const value = Math.floor(Math.random() * (max - min + 1)) + min;
