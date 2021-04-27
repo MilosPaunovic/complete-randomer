@@ -1,6 +1,6 @@
 # complete-randomer
 
-[![Testing](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/unit-tests.yml) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/MilosPaunovic/complete-randomer/blob/develop/LICENSE)
+[![Testing](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml/badge.svg)](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/MilosPaunovic/complete-randomer/blob/develop/LICENSE)
 
 A simple NPM helper package for generating random values.
 
@@ -42,6 +42,24 @@ randomer.STRING.NAMES(howMany);
 ```js
 // Random Boolean value
 randomer.BOOLEAN.IS();
+```
+
+#### Colors
+```js
+// HEX, #41D831
+randomer.COLOR.HEX();
+
+// RGB, rgb(180 206 38)
+randomer.COLOR.RGB();
+
+// RGBA, rgb(22 26 189 / 60%)
+randomer.COLOR.RGBA();
+
+// HSL, hsl(346 78% 49%)
+randomer.COLOR.HSL();
+
+// HSLA, hsl(134 75% 74% / 26%)
+randomer.COLOR.HSLA();
 ```
 
 ## Contributing
