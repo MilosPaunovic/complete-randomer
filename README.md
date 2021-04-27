@@ -44,6 +44,24 @@ randomer.STRING.NAMES(howMany);
 randomer.BOOLEAN.IS();
 ```
 
+#### Color
+```js
+// Hex color
+randomer.COLOR.HEX(); // #41D831
+
+// RGB color
+randomer.COLOR.RGB(); // rgb(180 206 38)
+
+// RGBA color
+randomer.COLOR.RGBA(); // rgb(22 26 189 / 60%)
+
+// HSL color
+randomer.COLOR.HSL(); // hsl(346 78% 49%)
+
+// HSLA color
+randomer.COLOR.HSLA(); // hsl(134 75% 74% / 26%)
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
