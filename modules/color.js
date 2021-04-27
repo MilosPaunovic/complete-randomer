@@ -5,6 +5,7 @@ const { INTEGER } = require('./number');
  * Generate random RGB or RGBA color
  *
  * @param {Boolean} [alpha=false] Does the color have an alpha value
+ *
  * @return {String} Random RGB or RGBA color
  */
 const generateRGBColor = (alpha = false) => {
@@ -19,6 +20,7 @@ const generateRGBColor = (alpha = false) => {
  * Generate random HSL or HSLA color
  *
  * @param {Boolean} [alpha=false] Does the color have an alpha value
+ *
  * @return {String} Random HSL or HSLA color
  */
 const generateHSLColor = (alpha = false) => {
