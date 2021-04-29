@@ -62,6 +62,13 @@ randomer.COLOR.HSL();
 randomer.COLOR.HSLA();
 ```
 
+#### Date
+
+```js
+// Random date between 01/01/1970 and 31/12/2030
+randomer.DATE.FULL();
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
