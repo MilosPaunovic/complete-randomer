@@ -1,3 +1,6 @@
+// Importing dependecies
+const { ARGUMENTS } = require('../utils/arguments');
+
 /**
  * Returns random generated boolean value
  *
@@ -5,7 +8,7 @@
  */
 exports.IS = function () {
   // Arguments checking
-  if (arguments.length) throw new TypeError('No parameters allowed');
+  ARGUMENTS(arguments, 0, 0, undefined);
 
   // Creating value
   const value = Math.round(Math.random() * 1 + 0) === 0;

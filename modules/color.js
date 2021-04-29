@@ -31,6 +31,9 @@ const generateHSLColor = (alpha = false) => {
   return String(color);
 };
 
+// Importing dependecies
+const { ARGUMENTS } = require('../utils/arguments');
+
 /**
  * Generate random HEX color
  *
@@ -38,7 +41,7 @@ const generateHSLColor = (alpha = false) => {
  */
 exports.HEX = function () {
   // Arguments checking
-  if (arguments.length) throw new TypeError('No parameters allowed');
+  ARGUMENTS(arguments, 0, 0, undefined);
 
   // Creating value
   const color = `#${(`${Math.random().toString(16)}000000`).substring(2, 8)}`;
@@ -54,7 +57,7 @@ exports.HEX = function () {
  */
 exports.RGB = function () {
   // Arguments checking
-  if (arguments.length) throw new TypeError('No parameters allowed');
+  ARGUMENTS(arguments, 0, 0, undefined);
 
   // Returning value
   return String(generateRGBColor());
@@ -67,7 +70,7 @@ exports.RGB = function () {
  */
 exports.RGBA = function () {
   // Arguments checking
-  if (arguments.length) throw new TypeError('No parameters allowed');
+  ARGUMENTS(arguments, 0, 0, undefined);
 
   // Returning value
   return String(generateRGBColor(true));
@@ -80,7 +83,7 @@ exports.RGBA = function () {
  */
 exports.HSL = function () {
   // Arguments checking
-  if (arguments.length) throw new TypeError('No parameters allowed');
+  ARGUMENTS(arguments, 0, 0, undefined);
 
   // Returning value
   return String(generateHSLColor());
@@ -93,7 +96,7 @@ exports.HSL = function () {
  */
 exports.HSLA = function () {
   // Arguments checking
-  if (arguments.length) throw new TypeError('No parameters allowed');
+  ARGUMENTS(arguments, 0, 0, undefined);
 
   // Returning value
   return String(generateHSLColor(true));

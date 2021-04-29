@@ -3,15 +3,15 @@ const { GIBBERISH, NAMES } = require('../modules/string');
 
 describe('GIBBERISH()', () => {
   it('Should throw TypeError if less than 1 parameter is sent', () => {
-    assert.throw(() => { GIBBERISH(); }, TypeError, 'One parameter required');
+    assert.throw(() => { GIBBERISH(); }, TypeError, '1 parameter(s) required');
   });
 
   it('Should throw TypeError if more than 2 parameter are sent', () => {
-    assert.throw(() => { GIBBERISH(1, 2); }, TypeError, 'One parameter required');
+    assert.throw(() => { GIBBERISH(1, 2); }, TypeError, '1 parameter(s) allowed');
   });
 
   it('Should throw TypeError if parameter is not Number', () => {
-    assert.throw(() => { GIBBERISH(true); }, TypeError, 'Parameter -length- must be Number');
+    assert.throw(() => { GIBBERISH(true); }, TypeError, 'Parameter(s) must be of -number- type');
   });
 
   it('Should return random string consisting of 30 character', () => {
@@ -27,11 +27,11 @@ describe('GIBBERISH()', () => {
 
 describe('NAMES()', () => {
   it('Should throw TypeError if more than 1 parameter is sent', () => {
-    assert.throw(() => { NAMES(1, 2); }, TypeError, 'Only one parameter allowed');
+    assert.throw(() => { NAMES(1, 2); }, TypeError, '1 parameter(s) allowed');
   });
 
   it('Should throw TypeError if parameter is not Number', () => {
-    assert.throw(() => { NAMES(true); }, TypeError, 'Parameter -howMany- must be Number');
+    assert.throw(() => { NAMES(true); }, TypeError, 'Parameter(s) must be of -number- type');
   });
 
   it('Should return one name if there are no parameter sent', () => {

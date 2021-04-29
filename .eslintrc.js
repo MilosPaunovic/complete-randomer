@@ -11,5 +11,6 @@ module.exports = {
   rules: {
     'func-names': 'off',
     'prefer-rest-params': 'off',
+    'valid-typeof': 'off',
   },
 };

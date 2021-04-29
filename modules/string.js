@@ -1,3 +1,6 @@
+// Importing dependecies
+const { ARGUMENTS } = require('../utils/arguments');
+
 /**
  * Returns random generated string containing number of characters
  * forwarded in function parameter
@@ -8,13 +11,7 @@
  */
 exports.GIBBERISH = function (length) {
   // Arguments checking
-  if (arguments.length !== 1) throw new TypeError('One parameter required');
-
-  const isArgumentInvalid = (arg) => typeof arg !== 'number';
-
-  if ([...arguments].filter(isArgumentInvalid).length > 0) {
-    throw new TypeError('Parameter -length- must be Number');
-  }
+  ARGUMENTS(arguments, 1, 1, 'number');
 
   // Creating value
   let string = '';
@@ -43,13 +40,7 @@ const { INTEGER } = require('./number');
  */
 exports.NAMES = function (howMany = 1) {
   // Arguments checking
-  if (arguments.length > 1) throw new TypeError('Only one parameter allowed');
-
-  const isArgumentInvalid = (arg) => typeof arg !== 'number';
-
-  if ([...arguments].filter(isArgumentInvalid).length > 0) {
-    throw new TypeError('Parameter -howMany- must be Number');
-  }
+  ARGUMENTS(arguments, 0, 1, 'number');
 
   // Creating value
   const result = [];

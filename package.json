@@ -1,6 +1,6 @@
 {
   "name": "complete-randomer",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "A simple NPM helper package for generating random values.",
   "author": "Miloš Paunović <paun992@hotmail.com>",
   "repository": {
@@ -19,11 +19,13 @@
     "integer",
     "string",
     "boolean",
+    "color",
     "front-end"
   ],
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.4",
+    "chai-datetime": "^1.8.0",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
