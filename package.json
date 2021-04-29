@@ -20,6 +20,7 @@
     "string",
     "boolean",
     "color",
+    "date",
     "front-end"
   ],
   "license": "MIT",
