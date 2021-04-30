@@ -23,7 +23,7 @@ jobs:
           node-version: "16.0.0"
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       - name: Lint code
         run: npm run lint
