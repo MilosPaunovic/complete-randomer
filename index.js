@@ -4,7 +4,8 @@ const BOOLEAN = require('./modules/boolean');
 const COLOR = require('./modules/color');
 const DATE = require('./modules/date');
 const QUOTES = require('./modules/quote');
+const EMAIL = require('./modules/email');
 
 module.exports = {
-  NUMBER, STRING, BOOLEAN, COLOR, DATE, QUOTES,
+  NUMBER, STRING, BOOLEAN, COLOR, DATE, QUOTES, EMAIL,
 };

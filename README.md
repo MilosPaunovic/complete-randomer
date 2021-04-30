@@ -33,8 +33,8 @@ randomer.NUMBER.INTEGER(min, max);
 // Parameter number of characters as string
 randomer.STRING.GIBBERISH(length);
 
-// Array of full name strings
-randomer.STRING.NAMES(howMany); // Defaults to 1
+// Array of full name strings between 1 and 1000 results
+randomer.STRING.NAMES(howMany); // Defaults to 10
 ```
 
 #### Boolean
@@ -83,6 +83,16 @@ randomer.QUOTES.SINGLE();
 
 // Array of quote objects between 1 and 1000 results
 randomer.QUOTES.LIST(howMany); // Defaults to 10
+```
+
+#### Emails
+
+```js
+// Random email address with 'host' part customizable
+randomer.EMAIL.SINGLE(host); // Defaults to randomer
+
+// Array of email addresses between 1 and 1000 results
+randomer.EMAIL.LIST(howMany); // Defaults to 10
 ```
 
 ## Contributing
