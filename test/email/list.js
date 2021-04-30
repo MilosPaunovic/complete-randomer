@@ -11,11 +11,11 @@ describe('LIST()', () => {
   });
 
   it('Should throw Error if parameter is smaller than 1', () => {
-    assert.throw(() => { LIST(0); }, Error, 'Minimum length is 1');
+    assert.throw(() => { LIST(0); }, Error, 'Number must be between 1 and 1000');
   });
 
   it('Should throw Error if parameter is larger than 1000', () => {
-    assert.throw(() => { LIST(1001); }, Error, 'Maximum length is 1000');
+    assert.throw(() => { LIST(1001); }, Error, 'Number must be between 1 and 1000');
   });
 
   it('Should return 10 emails if there are no parameter sent', () => {

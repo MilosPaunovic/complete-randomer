@@ -10,6 +10,14 @@ describe('NAMES()', () => {
     assert.throw(() => { NAMES(true); }, TypeError, 'Parameter(s) must be of -number- type');
   });
 
+  it('Should throw Error if parameter is smaller than 1', () => {
+    assert.throw(() => { NAMES(0); }, Error, 'Number must be between 1 and 1000');
+  });
+
+  it('Should throw Error if parameter is larger than 1000', () => {
+    assert.throw(() => { NAMES(1001); }, Error, 'Number must be between 1 and 1000');
+  });
+
   it('Should return 10 names if there are no parameter sent', () => {
     const result = NAMES();
     assert.lengthOf(result, 10);
