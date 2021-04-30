@@ -34,13 +34,18 @@ const { INTEGER } = require('./number');
  * Returns array of random full names, default length is one, can
  * be overridden using parameter
  *
- * @param {Number} [howMany=1] Number of names you need
+ * @param {Number} [howMany=10] Number of names you need
  *
  * @return {Array} Resulting array of names
  */
-exports.NAMES = function (howMany = 1) {
+exports.NAMES = function (howMany = 10) {
+  const MIN_LENGTH = 1;
+  const MAX_LENGHT = 1000;
+
   // Arguments checking
   ARGUMENTS(arguments, 0, 1, 'number');
+  if (howMany < MIN_LENGTH) throw new Error(`Minimum length is ${MIN_LENGTH}`);
+  if (howMany > MAX_LENGHT) throw new Error(`Maximum length is ${MAX_LENGHT}`);
 
   // Creating value
   const value = [];
