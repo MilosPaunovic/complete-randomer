@@ -75,6 +75,13 @@ randomer.DATE.PAST();
 randomer.DATE.FUTURE();
 ```
 
+#### Quote
+
+```js
+// Random quote Object with 'quoteText' and 'author'
+randomer.QUOTES.QUOTE();
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

@@ -3,7 +3,8 @@ const STRING = require('./modules/string');
 const BOOLEAN = require('./modules/boolean');
 const COLOR = require('./modules/color');
 const DATE = require('./modules/date');
+const QUOTES = require('./modules/quote');
 
 module.exports = {
-  NUMBER, STRING, BOOLEAN, COLOR, DATE,
+  NUMBER, STRING, BOOLEAN, COLOR, DATE, QUOTES,
 };
