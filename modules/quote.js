@@ -11,7 +11,7 @@ const { INTEGER } = require('./number');
  */
 exports.SINGLE = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const quote = quotes[INTEGER(0, quotes.length - 1)];
@@ -29,13 +29,8 @@ exports.SINGLE = function () {
  * @return {Array} Resulting array of random quotes
  */
 exports.LIST = function (howMany = 10) {
-  const MIN_LENGTH = 1;
-  const MAX_LENGHT = 1000;
-
   // Arguments checking
-  ARGUMENTS(arguments, 0, 1, 'number');
-  if (howMany < MIN_LENGTH) throw new Error(`Minimum length is ${MIN_LENGTH}`);
-  if (howMany > MAX_LENGHT) throw new Error(`Maximum length is ${MAX_LENGHT}`);
+  ARGUMENTS(arguments, 0, 1, 'number', howMany);
 
   // Creating a Set for unique quotes
   const value = new Set();

@@ -11,7 +11,7 @@ const { ARGUMENTS } = require('../utils/arguments');
  */
 exports.INTEGER = function (min, max) {
   // Arguments checking
-  ARGUMENTS(arguments, 2, 2, 'number');
+  ARGUMENTS(arguments, 2, 2, 'number', undefined);
 
   // Creating value
   const value = Math.floor(Math.random() * (max - min + 1)) + min;

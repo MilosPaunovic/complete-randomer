@@ -24,7 +24,7 @@ const generateDate = (start, end) => {
  */
 exports.FULL = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const start = new Date(1970, 0, 1).getTime();
@@ -43,7 +43,7 @@ exports.FULL = function () {
  */
 exports.PAST = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const start = new Date(1970, 0, 1).getTime();
@@ -62,7 +62,7 @@ exports.PAST = function () {
  */
 exports.FUTURE = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const start = new Date(Date.now()).getTime();

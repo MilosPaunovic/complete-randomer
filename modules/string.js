@@ -11,7 +11,7 @@ const { ARGUMENTS } = require('../utils/arguments');
  */
 exports.GIBBERISH = function (length) {
   // Arguments checking
-  ARGUMENTS(arguments, 1, 1, 'number');
+  ARGUMENTS(arguments, 1, 1, 'number', undefined);
 
   // Creating value
   let value = '';
@@ -39,13 +39,8 @@ const { INTEGER } = require('./number');
  * @return {Array} Resulting array of names
  */
 exports.NAMES = function (howMany = 10) {
-  const MIN_LENGTH = 1;
-  const MAX_LENGHT = 1000;
-
   // Arguments checking
-  ARGUMENTS(arguments, 0, 1, 'number');
-  if (howMany < MIN_LENGTH) throw new Error(`Minimum length is ${MIN_LENGTH}`);
-  if (howMany > MAX_LENGHT) throw new Error(`Maximum length is ${MAX_LENGHT}`);
+  ARGUMENTS(arguments, 0, 1, 'number', howMany);
 
   // Creating value
   const value = [];

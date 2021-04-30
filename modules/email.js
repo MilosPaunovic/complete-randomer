@@ -13,7 +13,7 @@ const { INTEGER } = require('./number');
  */
 exports.SINGLE = function (host = 'randomer') {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 1, 'string');
+  ARGUMENTS(arguments, 0, 1, 'string', undefined);
 
   // Creating value
   const name = names[INTEGER(0, names.length - 1)].replace(/\s/g, '.').toLowerCase();
@@ -32,13 +32,8 @@ exports.SINGLE = function (host = 'randomer') {
  * @return {Array} Resulting array of emails
  */
 exports.LIST = function (howMany = 10) {
-  const MIN_LENGTH = 1;
-  const MAX_LENGHT = 1000;
-
   // Arguments checking
-  ARGUMENTS(arguments, 0, 1, 'number');
-  if (howMany < MIN_LENGTH) throw new Error(`Minimum length is ${MIN_LENGTH}`);
-  if (howMany > MAX_LENGHT) throw new Error(`Maximum length is ${MAX_LENGHT}`);
+  ARGUMENTS(arguments, 0, 1, 'number', howMany);
 
   // Creating value
   const value = [];
