@@ -1,5 +1,5 @@
 const { assert, expect } = require('chai');
-const { QUOTE } = require('../modules/quote');
+const { QUOTE } = require('../../modules/quote');
 
 describe('QUOTE()', () => {
   it('Should throw TypeError if parameters are sent', () => {
