@@ -14,16 +14,16 @@ exports.GIBBERISH = function (length) {
   ARGUMENTS(arguments, 1, 1, 'number');
 
   // Creating value
-  let string = '';
+  let value = '';
 
-  while (string.length < length) {
-    string += Math.random()
+  while (value.length < length) {
+    value += Math.random()
       .toString(36)
-      .substr(2, length - string.length);
+      .substr(2, length - value.length);
   }
 
   // Making sure value is casted to proper type
-  return String(string);
+  return String(value);
 };
 
 // Importing dependecies
@@ -43,12 +43,12 @@ exports.NAMES = function (howMany = 1) {
   ARGUMENTS(arguments, 0, 1, 'number');
 
   // Creating value
-  const result = [];
+  const value = [];
 
   for (let i = 0; i < howMany; i += 1) {
     const index = INTEGER(0, names.length - 1);
-    result.push(names[index]);
+    value.push(names[index]);
   }
 
-  return result;
+  return value;
 };

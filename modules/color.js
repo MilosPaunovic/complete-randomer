@@ -10,10 +10,10 @@ const { INTEGER } = require('./number');
  */
 const generateRGBColor = (alpha = false) => {
   // Creating value
-  const color = `rgb(${INTEGER(0, 255)} ${INTEGER(0, 255)} ${INTEGER(0, 255)}${alpha ? ` / ${INTEGER(10, 99)}%)` : ')'}`;
+  const value = `rgb(${INTEGER(0, 255)} ${INTEGER(0, 255)} ${INTEGER(0, 255)}${alpha ? ` / ${INTEGER(10, 99)}%)` : ')'}`;
 
-  // Making sure value is casted to proper type
-  return String(color);
+  // Returning value
+  return value;
 };
 
 /**
@@ -25,10 +25,10 @@ const generateRGBColor = (alpha = false) => {
  */
 const generateHSLColor = (alpha = false) => {
   // Creating value
-  const color = `hsl(${INTEGER(0, 360)} ${INTEGER(30, 95)}% ${INTEGER(30, 80)}%${alpha ? ` / ${INTEGER(10, 99)}%)` : ')'}`;
+  const value = `hsl(${INTEGER(0, 360)} ${INTEGER(30, 95)}% ${INTEGER(30, 80)}%${alpha ? ` / ${INTEGER(10, 99)}%)` : ')'}`;
 
-  // Making sure value is casted to proper type
-  return String(color);
+  // Returning value
+  return value;
 };
 
 // Importing dependecies
@@ -44,10 +44,10 @@ exports.HEX = function () {
   ARGUMENTS(arguments, 0, 0, undefined);
 
   // Creating value
-  const color = `#${(`${Math.random().toString(16)}000000`).substring(2, 8)}`;
+  const value = `#${(`${Math.random().toString(16)}000000`).substring(2, 8)}`;
 
   // Making sure value is casted to proper type
-  return String(color);
+  return String(value);
 };
 
 /**
@@ -59,8 +59,11 @@ exports.RGB = function () {
   // Arguments checking
   ARGUMENTS(arguments, 0, 0, undefined);
 
-  // Returning value
-  return String(generateRGBColor());
+  // Creating value
+  const value = generateRGBColor();
+
+  // Making sure value is casted to proper type
+  return String(value);
 };
 
 /**
@@ -72,8 +75,11 @@ exports.RGBA = function () {
   // Arguments checking
   ARGUMENTS(arguments, 0, 0, undefined);
 
-  // Returning value
-  return String(generateRGBColor(true));
+  // Creating value
+  const value = generateRGBColor(true);
+
+  // Making sure value is casted to proper type
+  return String(value);
 };
 
 /**
@@ -85,8 +91,11 @@ exports.HSL = function () {
   // Arguments checking
   ARGUMENTS(arguments, 0, 0, undefined);
 
-  // Returning value
-  return String(generateHSLColor());
+  // Creating value
+  const value = generateHSLColor();
+
+  // Making sure value is casted to proper type
+  return String(value);
 };
 
 /**
@@ -98,6 +107,9 @@ exports.HSLA = function () {
   // Arguments checking
   ARGUMENTS(arguments, 0, 0, undefined);
 
-  // Returning value
-  return String(generateHSLColor(true));
+  // Creating value
+  const value = generateHSLColor(true);
+
+  // Making sure value is casted to proper type
+  return String(value);
 };
