@@ -11,7 +11,7 @@ exports.IS = function () {
   ARGUMENTS(arguments, 0, 0, undefined);
 
   // Creating value
-  const value = Math.round(Math.random() * 1 + 0) === 0;
+  const value = Math.round(Math.random() * 1) === 0;
 
   // Making sure value is casted to proper type
   return Boolean(value);

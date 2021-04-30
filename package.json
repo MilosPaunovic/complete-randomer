@@ -1,6 +1,6 @@
 {
   "name": "complete-randomer",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "A simple NPM helper package for generating random values.",
   "author": "Miloš Paunović <paun992@hotmail.com>",
   "repository": {
@@ -16,10 +16,10 @@
     "random",
     "generator",
     "number",
-    "integer",
     "string",
     "boolean",
     "color",
+    "date",
     "front-end"
   ],
   "license": "MIT",
