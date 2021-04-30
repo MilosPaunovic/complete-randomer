@@ -67,6 +67,12 @@ randomer.COLOR.HSLA();
 ```js
 // Random date between 01/01/1970 and 31/12/2030
 randomer.DATE.FULL();
+
+// Random date between 01/01/1970 and current date
+randomer.DATE.PAST();
+
+// Random date between current date and 31/12/2030
+randomer.DATE.FUTURE();
 ```
 
 ## Contributing
