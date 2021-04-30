@@ -1,5 +1,5 @@
 const { expect, assert } = require('chai');
-const { IS } = require('../modules/boolean');
+const { IS } = require('../../modules/boolean');
 
 describe('IS()', () => {
   it('Should throw TypeError for containing parameters', () => {

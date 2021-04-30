@@ -1,6 +1,6 @@
 {
   "name": "complete-randomer",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "A simple NPM helper package for generating random values.",
   "author": "Miloš Paunović <paun992@hotmail.com>",
   "repository": {
@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./ --fix",
-    "test": "mocha test/*.js"
+    "test": "mocha test/*/*.js"
   },
   "keywords": [
     "random",
@@ -20,6 +20,7 @@
     "boolean",
     "color",
     "date",
+    "quote",
     "front-end"
   ],
   "license": "MIT",

@@ -34,7 +34,7 @@ const { INTEGER } = require('./number');
  * Returns array of random full names, default length is one, can
  * be overridden using parameter
  *
- * @param {Number} howMany Number of names you need
+ * @param {Number} [howMany=1] Number of names you need
  *
  * @return {Array} Resulting array of names
  */
