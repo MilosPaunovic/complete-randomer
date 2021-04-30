@@ -75,11 +75,17 @@ randomer.DATE.PAST();
 randomer.DATE.FUTURE();
 ```
 
-#### Quote
+#### Quotes
 
 ```js
 // Random quote Object with 'quoteText' and 'author'
-randomer.QUOTES.QUOTE();
+randomer.QUOTES.SINGLE();
+
+// Array of quote Objects with 'quoteText' and 'author'
+// Default length is 10
+// Max length is 1000
+// Min lenght is 1
+randomer.QUOTES.LIST(howMany);
 ```
 
 ## Contributing
