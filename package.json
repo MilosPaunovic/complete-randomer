@@ -21,6 +21,7 @@
     "color",
     "date",
     "quote",
+    "email",
     "front-end"
   ],
   "license": "MIT",
