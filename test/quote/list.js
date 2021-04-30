@@ -29,7 +29,7 @@ describe('LIST()', () => {
   });
 
   it('Should test if returned value is Array', () => {
-    const result = LIST(30);
+    const result = LIST();
     assert.isArray(result);
   });
 });
