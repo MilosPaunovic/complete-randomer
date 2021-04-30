@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./ --fix",
-    "test": "mocha test/*.js"
+    "test": "mocha test/*/*.js"
   },
   "keywords": [
     "random",
