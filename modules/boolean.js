@@ -8,7 +8,7 @@ const { ARGUMENTS } = require('../utils/arguments');
  */
 exports.IS = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const value = Math.round(Math.random() * 1) === 0;

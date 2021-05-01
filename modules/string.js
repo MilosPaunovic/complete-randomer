@@ -5,13 +5,13 @@ const { ARGUMENTS } = require('../utils/arguments');
  * Returns random generated string containing number of characters
  * forwarded in function parameter
  *
- * @param {Number} length Number of character for your random string
+ * @param {Number} [length=10] Number of character for your random string
  *
  * @return {String} Resulting string
  */
-exports.GIBBERISH = function (length) {
+exports.GIBBERISH = function (length = 10) {
   // Arguments checking
-  ARGUMENTS(arguments, 1, 1, 'number');
+  ARGUMENTS(arguments, 0, 1, 'number', undefined);
 
   // Creating value
   let value = '';
@@ -34,13 +34,13 @@ const { INTEGER } = require('./number');
  * Returns array of random full names, default length is one, can
  * be overridden using parameter
  *
- * @param {Number} [howMany=1] Number of names you need
+ * @param {Number} [howMany=10] Number of names you need
  *
  * @return {Array} Resulting array of names
  */
-exports.NAMES = function (howMany = 1) {
+exports.NAMES = function (howMany = 10) {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 1, 'number');
+  ARGUMENTS(arguments, 0, 1, 'number', howMany);
 
   // Creating value
   const value = [];

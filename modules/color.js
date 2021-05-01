@@ -41,7 +41,7 @@ const { ARGUMENTS } = require('../utils/arguments');
  */
 exports.HEX = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const value = `#${(`${Math.random().toString(16)}000000`).substring(2, 8)}`;
@@ -57,7 +57,7 @@ exports.HEX = function () {
  */
 exports.RGB = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const value = generateRGBColor();
@@ -73,7 +73,7 @@ exports.RGB = function () {
  */
 exports.RGBA = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const value = generateRGBColor(true);
@@ -89,7 +89,7 @@ exports.RGBA = function () {
  */
 exports.HSL = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const value = generateHSLColor();
@@ -105,7 +105,7 @@ exports.HSL = function () {
  */
 exports.HSLA = function () {
   // Arguments checking
-  ARGUMENTS(arguments, 0, 0, undefined);
+  ARGUMENTS(arguments, 0, 0, undefined, undefined);
 
   // Creating value
   const value = generateHSLColor(true);

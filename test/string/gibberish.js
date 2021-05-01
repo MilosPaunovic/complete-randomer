@@ -2,16 +2,17 @@ const { assert } = require('chai');
 const { GIBBERISH } = require('../../modules/string');
 
 describe('GIBBERISH()', () => {
-  it('Should throw TypeError if less than 1 parameter is sent', () => {
-    assert.throw(() => { GIBBERISH(); }, TypeError, '1 parameter(s) required');
-  });
-
   it('Should throw TypeError if more than 2 parameter are sent', () => {
     assert.throw(() => { GIBBERISH(1, 2); }, TypeError, '1 parameter(s) allowed');
   });
 
   it('Should throw TypeError if parameter is not Number', () => {
     assert.throw(() => { GIBBERISH(true); }, TypeError, 'Parameter(s) must be of -number- type');
+  });
+
+  it('Should return random string consisting of 10 character without parameters sent', () => {
+    const result = GIBBERISH();
+    assert.lengthOf(result, 10);
   });
 
   it('Should return random string consisting of 30 character', () => {

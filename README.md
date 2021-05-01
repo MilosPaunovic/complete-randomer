@@ -23,18 +23,18 @@ const randomer = require('complete-randomer');
 #### Number
 
 ```js
-// Integer between min & max, inclusively
-randomer.NUMBER.INTEGER(min, max);
+// Integer between min & max parameters, inclusively
+randomer.NUMBER.INTEGER(min, max); // Defaults to 1, 100
 ```
 
 #### String
 
 ```js
 // Parameter number of characters as string
-randomer.STRING.GIBBERISH(length);
+randomer.STRING.GIBBERISH(length); // Defaults to 10
 
-// Array of strings as full names, default length is 1
-randomer.STRING.NAMES(howMany);
+// Array of full name strings between 1 and 1000 results
+randomer.STRING.NAMES(howMany); // Defaults to 10
 ```
 
 #### Boolean
@@ -78,14 +78,21 @@ randomer.DATE.FUTURE();
 #### Quotes
 
 ```js
-// Random quote Object with 'quoteText' and 'author'
+// Random quote object, { text: '...', author: '...' }
 randomer.QUOTES.SINGLE();
 
-// Array of quote Objects with 'quoteText' and 'author'
-// Default length is 10
-// Max length is 1000
-// Min lenght is 1
-randomer.QUOTES.LIST(howMany);
+// Array of quote objects between 1 and 1000 results
+randomer.QUOTES.LIST(howMany); // Defaults to 10
+```
+
+#### Emails
+
+```js
+// Random email address with 'host' part customizable
+randomer.EMAIL.SINGLE(host); // Defaults to randomer
+
+// Array of email addresses between 1 and 1000 results
+randomer.EMAIL.LIST(howMany); // Defaults to 10
 ```
 
 ## Contributing

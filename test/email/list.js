@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const { LIST } = require('../../modules/quote');
+const { LIST } = require('../../modules/email');
 
 describe('LIST()', () => {
   it('Should throw TypeError if more than 1 parameter is sent', () => {
@@ -18,12 +18,12 @@ describe('LIST()', () => {
     assert.throw(() => { LIST(1001); }, Error, 'Number must be between 1 and 1000');
   });
 
-  it('Should return 10 quotes if there are no parameter sent', () => {
+  it('Should return 10 emails if there are no parameter sent', () => {
     const result = LIST();
     assert.lengthOf(result, 10);
   });
 
-  it('Should return 30 quotes when parameter is sent', () => {
+  it('Should return 30 emails when parameter is sent', () => {
     const result = LIST(30);
     assert.lengthOf(result, 30);
   });
