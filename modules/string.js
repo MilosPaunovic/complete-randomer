@@ -5,13 +5,13 @@ const { ARGUMENTS } = require('../utils/arguments');
  * Returns random generated string containing number of characters
  * forwarded in function parameter
  *
- * @param {Number} length Number of character for your random string
+ * @param {Number} [length=10] Number of character for your random string
  *
  * @return {String} Resulting string
  */
-exports.GIBBERISH = function (length) {
+exports.GIBBERISH = function (length = 10) {
   // Arguments checking
-  ARGUMENTS(arguments, 1, 1, 'number', undefined);
+  ARGUMENTS(arguments, 0, 1, 'number', undefined);
 
   // Creating value
   let value = '';

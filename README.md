@@ -31,7 +31,7 @@ randomer.NUMBER.INTEGER(min, max); // Defaults to 1, 100
 
 ```js
 // Parameter number of characters as string
-randomer.STRING.GIBBERISH(length);
+randomer.STRING.GIBBERISH(length); // Defaults to 10
 
 // Array of full name strings between 1 and 1000 results
 randomer.STRING.NAMES(howMany); // Defaults to 10
