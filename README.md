@@ -20,12 +20,9 @@ const randomer = require('complete-randomer');
 
 ## Methods
 
-#### Number
-
-```js
-// Integer between min & max parameters, inclusively
-randomer.NUMBER.INTEGER(min, max);
-```
+| Number                | Defaults | Description |
+|:----------------------|:--------|:------------|
+| `randomer.NUMBER.INTEGER(min, max)` | `1, 100` | Integer between min & max, inclusively. |
 
 #### String
 
