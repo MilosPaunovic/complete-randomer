@@ -95,6 +95,13 @@ randomer.EMAIL.SINGLE(host); // Defaults to randomer
 randomer.EMAIL.LIST(howMany); // Defaults to 10
 ```
 
+#### Users
+
+```js
+// Random user object, { firstName: '...', lastName: '...', email: '...', password: '...', dob: '...' }
+randomer.USER.SINGLE();
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
