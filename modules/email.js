@@ -1,8 +1,6 @@
 // Importing dependecies
 const { ARGUMENTS } = require('../utils/arguments');
-
-const { names } = require('../data/names');
-const { INTEGER } = require('./number');
+const { name: fullName } = require('../utils/helpers');
 
 /**
  * Returns random generated email address
@@ -16,7 +14,7 @@ exports.SINGLE = function (host = 'randomer') {
   ARGUMENTS(arguments, 0, 1, 'string', undefined);
 
   // Creating value
-  const name = names[INTEGER(0, names.length - 1)].replace(/\s/g, '.').toLowerCase();
+  const name = fullName().replace(/\s/g, '.').toLowerCase();
   const value = `${name}@${host}.com`;
 
   // Making sure value is casted to proper type
