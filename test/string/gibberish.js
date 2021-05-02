@@ -3,7 +3,7 @@ const { GIBBERISH } = require('../../modules/string');
 
 describe('GIBBERISH()', () => {
   it('Should throw TypeError if more than 2 parameter are sent', () => {
-    assert.throw(() => { GIBBERISH(1, 2); }, TypeError, '1 parameter(s) allowed');
+    assert.throw(() => { GIBBERISH(true, true); }, TypeError, '1 parameter(s) allowed');
   });
 
   it('Should throw TypeError if parameter is not Number', () => {

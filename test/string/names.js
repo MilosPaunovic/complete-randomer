@@ -3,7 +3,7 @@ const { NAMES } = require('../../modules/string');
 
 describe('NAMES()', () => {
   it('Should throw TypeError if more than 1 parameter is sent', () => {
-    assert.throw(() => { NAMES(1, 2); }, TypeError, '1 parameter(s) allowed');
+    assert.throw(() => { NAMES(true, true); }, TypeError, '1 parameter(s) allowed');
   });
 
   it('Should throw TypeError if parameter is not Number', () => {
