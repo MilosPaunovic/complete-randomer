@@ -28,3 +28,27 @@ exports.SINGLE = function () {
   // Returning value
   return value;
 };
+
+/**
+ * Returns array of random user objects, default length is 10, can
+ * be overridden using parameter
+ *
+ * @param {Number} [howMany=10] Number of emails you need
+ *
+ * @return {Array} Resulting array of user objects
+ */
+exports.LIST = function (howMany = 10) {
+  // Arguments checking
+  ARGUMENTS(arguments, 0, 1, 'number', howMany);
+
+  // Creating value
+  const value = [];
+
+  for (let i = 0; i < howMany; i += 1) {
+    const user = exports.SINGLE();
+    value.push(user);
+  }
+
+  // Returning value
+  return value;
+};
