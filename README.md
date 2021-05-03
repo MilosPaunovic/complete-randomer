@@ -100,6 +100,9 @@ randomer.EMAIL.LIST(howMany); // Defaults to 10
 ```js
 // Random user object, { firstName: '...', lastName: '...', email: '...', password: '...', dob: '...' }
 randomer.USER.SINGLE();
+
+// Array of user objects between 1 and 1000 results
+randomer.USER.LIST(howMany); // Defaults to 10
 ```
 
 ## Contributing
