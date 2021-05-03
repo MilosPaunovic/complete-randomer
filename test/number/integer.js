@@ -3,7 +3,7 @@ const { INTEGER } = require('../../modules/number');
 
 describe('INTEGER()', () => {
   it('Should throw TypeError if more than 2 parameter are sent', () => {
-    assert.throw(() => { INTEGER(1, 2, 3); }, TypeError, '2 parameter(s) allowed');
+    assert.throw(() => { INTEGER(true, true, true); }, TypeError, '2 parameter(s) allowed');
   });
 
   it('Should throw TypeError if at least one parameter is not Number', () => {

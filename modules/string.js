@@ -27,8 +27,7 @@ exports.GIBBERISH = function (length = 10) {
 };
 
 // Importing dependecies
-const { names } = require('../data/names');
-const { INTEGER } = require('./number');
+const { name } = require('../utils/helpers');
 
 /**
  * Returns array of random full names, default length is one, can
@@ -46,9 +45,9 @@ exports.NAMES = function (howMany = 10) {
   const value = [];
 
   for (let i = 0; i < howMany; i += 1) {
-    const index = INTEGER(0, names.length - 1);
-    value.push(names[index]);
+    value.push(name());
   }
 
+  // Returning value
   return value;
 };

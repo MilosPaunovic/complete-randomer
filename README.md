@@ -30,7 +30,7 @@ randomer.NUMBER.INTEGER(min, max); // Defaults to 1, 100
 #### String
 
 ```js
-// Parameter number of characters as string
+// Parameter number of characters, could be used as a random password generator
 randomer.STRING.GIBBERISH(length); // Defaults to 10
 
 // Array of full name strings between 1 and 1000 results
@@ -93,6 +93,16 @@ randomer.EMAIL.SINGLE(host); // Defaults to randomer
 
 // Array of email addresses between 1 and 1000 results
 randomer.EMAIL.LIST(howMany); // Defaults to 10
+```
+
+#### Users
+
+```js
+// Random user object, { firstName: '...', lastName: '...', email: '...', password: '...', dob: '...' }
+randomer.USER.SINGLE();
+
+// Array of user objects between 1 and 1000 results
+randomer.USER.LIST(howMany); // Defaults to 10
 ```
 
 ## Contributing
