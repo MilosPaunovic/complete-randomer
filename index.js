@@ -5,7 +5,8 @@ const COLOR = require('./modules/color');
 const DATE = require('./modules/date');
 const QUOTES = require('./modules/quote');
 const EMAIL = require('./modules/email');
+const USER = require('./modules/user');
 
 module.exports = {
-  NUMBER, STRING, BOOLEAN, COLOR, DATE, QUOTES, EMAIL,
+  NUMBER, STRING, BOOLEAN, COLOR, DATE, QUOTES, EMAIL, USER,
 };
