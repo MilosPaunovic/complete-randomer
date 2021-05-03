@@ -41,5 +41,6 @@ exports.LIST = function (howMany = 10) {
     value.push(email);
   }
 
+  // Returning value
   return value;
 };
