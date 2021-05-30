@@ -1,6 +1,6 @@
 {
   "name": "complete-randomer",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "A simple NPM helper package for generating random values.",
   "author": "Miloš Paunović <paun992@hotmail.com>",
   "repository": {

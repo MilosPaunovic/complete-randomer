@@ -1,6 +1,6 @@
 # complete-randomer
 
-[![Testing](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml/badge.svg)](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/MilosPaunovic/complete-randomer/blob/develop/LICENSE)
+[![npm version](https://badge.fury.io/js/complete-randomer.svg)](https://badge.fury.io/js/complete-randomer) [![Testing](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml/badge.svg)](https://github.com/MilosPaunovic/complete-randomer/actions/workflows/testing.yml) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/MilosPaunovic/complete-randomer/blob/develop/LICENSE)
 
 A simple NPM helper package for generating random values.
 
@@ -42,6 +42,9 @@ randomer.STRING.NAMES(howMany); // Defaults to 10
 ```js
 // Random Boolean value
 randomer.BOOLEAN.IS();
+
+// Random YES or NO string
+randomer.BOOLEAN.YES_NO();
 ```
 
 #### Colors
