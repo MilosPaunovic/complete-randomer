@@ -42,6 +42,9 @@ randomer.STRING.NAMES(howMany); // Defaults to 10
 ```js
 // Random Boolean value
 randomer.BOOLEAN.IS();
+
+// Random YES or NO string
+randomer.BOOLEAN.YES_NO();
 ```
 
 #### Colors
